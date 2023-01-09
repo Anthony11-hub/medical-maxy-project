@@ -1,0 +1,14 @@
+<div class="row">
+    <%= include ("./partials/messages")  %> 
+    <form action="/users/admin" method="POST">
+      <div class="f">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="enter email here">
+      </div>
+      <div class="f">
+        <label for="password">Password</label>
+        <input type="password" name="password" id="password" placeholder="enter password here">
+      </div>
+      <button type="submit">Login</button>
+    </form>
+  </div>
