@@ -1,0 +1,25 @@
+<div class="row">
+    <%= include ("./partials/messages");  %> 
+    <form action="/users/register" method="POST">
+      <div class="f">
+        <label for="name">Name</label>
+        <input type="text" name="name" id="name" placeholder="enter your name here" value="<%= typeof name != 'undefined' ? name : '' %>">
+      </div>
+      <div class="f">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="enter email here" value="<%= typeof email != 'undefined' ? email : '' %>">
+      </div>
+      <div class="f">
+        <label for="password">Password</label>
+        <input type="password" name="password" id="password" placeholder="enter password here" value="<%= typeof password != 'undefined' ? password : '' %>">
+      </div>
+      <div class="f">
+        <label for="password">Confirm password</label>
+        <input type="password" name="password2" id="password2" placeholder="confirm password here" value="<%= typeof password2 != 'undefined' ? password2 : '' %>">
+      </div>
+      <button type="submit">Register</button>
+      <p class="lead mt-4">
+        Have an account? <a href="/users/login">Login</a>
+      </p>
+    </form>
+  </div>
