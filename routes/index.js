@@ -19,16 +19,21 @@ router.get('/admin-dash', ensureAuthenticated, (req, res) =>
   })
 );
 
-router.get('/view-admin', ensureAuthenticated, (req, res) =>
-  res.render('view-admin', {
-    user: req.user
-  })
-);
+// router.get('/view-admin', ensureAuthenticated, (req, res) =>
+//   res.render('view-admin', {
+//     user: req.user
+//   })
+// );
 
-router.get('/set-pricing', ensureAuthenticated, (req, res) =>
-  res.render('set-pricing', {
-    user: req.user
-  })
-);
+// router.get('/set-pricing', ensureAuthenticated, (req, res) =>
+//   res.render('set-pricing', {
+//     user: req.user
+//   })
+// );
+
+
+// router.get('/view-admin', (req,res) => {
+//   res.render('view-admin');
+// })
 
 module.exports = router;

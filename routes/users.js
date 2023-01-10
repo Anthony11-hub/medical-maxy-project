@@ -13,7 +13,7 @@ router.get('/login', forwardAuthenticated, (req, res) => res.render('login'));
 router.get('/admin', forwardAuthenticated, (req, res) => res.render('admin'));
 
 // Register Page
-router.get('/view-admin', forwardAuthenticated, (req, res) => res.render('view-admin'));
+router.get('/view-admin',(req, res) => res.render('view-admin'));
 
 // Register Page
 router.get('/register', forwardAuthenticated, (req, res) => res.render('register'));
