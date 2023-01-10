@@ -8,8 +8,8 @@
         <li><a href="/users/admin-logout">Logout</a></li>
     </ul>
 </div> -->
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="#">Welcome <%= user.name %></a>
+<!-- <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">Welcome </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -29,4 +29,34 @@
         </li>
       </ul>
     </div>
-  </nav>
+  </nav> -->
+
+
+  <section>
+    <div class="nav">
+        <input type="checkbox" id="nav-check">
+        <div class="nav-header">
+          <div class="nav-title">
+            Admin Tab
+          </div>
+        </div>
+        <div class="nav-btn">
+          <label for="nav-check">
+            <span></span>
+            <span></span>
+            <span></span>
+          </label>
+        </div>
+        
+        <div class="nav-links">
+            <a href="#">Dashboard</a>
+          <a href="/users/view-admin">View Users</a>
+          <a href="/users/set-pricing">Pricing</a>
+          <a href="#">Reports</a>
+          <!-- <a href="#" target="">View Pricing</a> -->
+          <a href="/users/admin-logout">Logout</a>
+        </div>
+      </div>
+      <p>welcome to the dashboard <%= user.name %></p>
+
+</section>

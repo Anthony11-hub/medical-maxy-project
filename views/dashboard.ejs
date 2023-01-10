@@ -1,2 +1,28 @@
-<p>welcome to the dashboard <%= user.name %></p>
-<a href="/users/logout">Logout</a>
+
+<section>
+    <div class="nav">
+        <input type="checkbox" id="nav-check">
+        <div class="nav-header">
+          <div class="nav-title">
+            Online Medicare
+          </div>
+        </div>
+        <div class="nav-btn">
+          <label for="nav-check">
+            <span></span>
+            <span></span>
+            <span></span>
+          </label>
+        </div>
+        
+        <div class="nav-links">
+          <a href="#">Book appointment</a>
+          <a href="#">My history</a>
+          <a href="#">Self-diagnose</a>
+          <a href="#">View Pricing</a>
+          <a href="/users/logout">Logout</a>
+        </div>
+      </div>
+      <p>welcome to the dashboard <%= user.name %></p>
+
+</section>
