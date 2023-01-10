@@ -19,6 +19,13 @@ router.get('/admin-dash', ensureAuthenticated, (req, res) =>
   })
 );
 
+// admin routes
+// router.get('/view-admin', ensureAuthenticated, (req, res) =>
+//   res.render('view-admin', {
+//     user: req.user
+//   })
+// );
+
 // router.get('/view-admin', ensureAuthenticated, (req, res) =>
 //   res.render('view-admin', {
 //     user: req.user
