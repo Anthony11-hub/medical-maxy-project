@@ -178,3 +178,10 @@ body {
 .card  button:hover, a:hover {
     opacity: 0.7;
   }
+
+
+/* welcome */
+.welcome {
+  align-items: center;
+  text-align: center;
+}
