@@ -21,6 +21,10 @@ router.get('/register', forwardAuthenticated, (req, res) => res.render('register
 // Register Page
 router.get('/set-pricing',ensureAuthenticated, (req, res) => res.render('set-pricing'));
 
+router.get('/doctor',ensureAuthenticated, (req, res) => res.render('doctor'));
+
+router.get('/add-doctor',ensureAuthenticated, (req, res) => res.render('add-doctor'));
+
 // Register
 router.post('/register', (req, res) => {
   const { name, email, password, password2 } = req.body;
