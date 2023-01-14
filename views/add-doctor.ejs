@@ -2,7 +2,7 @@
     <nav>
         <div class="container1">
             <div class="box-nav d-flex justify-between">
-                <a href="/index.html"><span class="text-gradient"><i class="fa-solid fa-arrow-left"></i></span></a>
+                <a href="/users/doctor"><span class="text-gradient"><i class="fa-solid fa-arrow-left"></i></span></a>
             </div>
         </div>
         <div class="container1">
@@ -19,7 +19,7 @@
         <label for="fname">Name</label>
       </div>
       <div class="col-75">
-        <input type="text" id="fname" name="firstname" placeholder="Enter name here..">
+        <input type="text" id="fname" name="firstname" placeholder="Enter name here.." value="<%= typeof name != 'undefined' ? name : '' %>">
       </div>
     </div>
     <div class="row">
@@ -27,7 +27,7 @@
         <label for="lname">Email</label>
       </div>
       <div class="col-75">
-        <input type="email" id="lname" name="lastname" placeholder="Enter email here..">
+        <input type="email" id="lname" name="lastname" placeholder="Enter email here.." value="<%= typeof email != 'undefined' ? email : '' %>">
       </div>
     </div>
     <div class="row">
@@ -35,7 +35,7 @@
           <label for="lname">Phone Number</label>
         </div>
         <div class="col-75">
-          <input type="number" id="number" name="lastname" placeholder="Enter phone number here..">
+          <input type="number" id="number" name="lastname" placeholder="Enter phone number here.." value="<%= typeof number != 'undefined' ? number : '' %>">
         </div>
       </div>
     <div class="row">
@@ -43,17 +43,25 @@
             <label for="lname">Password</label>
         </div>
         <div class="col-75">
-            <input type="password" id="password" name="password" placeholder="Enter doctor's password..">
+            <input type="password" id="password" name="password" placeholder="Enter doctor's password.." value="<%= typeof password != 'undefined' ? password : '' %>">
         </div>
     </div>
+    <div class="row">
+      <div class="col-25">
+          <label for="lname">Confirm Password</label>
+      </div>
+      <div class="col-75">
+          <input type="password" id="password2" name="password" placeholder="Enter doctor's password.." value="<%= typeof password2 != 'undefined' ? password2 : '' %>">
+      </div>
+  </div>
     <div class="row">
         <div class="col-25">
           <label for="country">Gender</label>
         </div>
         <div class="col-75">
           <select id="country" name="country">
-            <option value="australia">Male</option>
-            <option value="canada">Female</option>
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
           </select>
         </div>
       </div>

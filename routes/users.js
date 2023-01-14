@@ -27,10 +27,10 @@ router.get('/add-doctor',ensureAuthenticated, (req, res) => res.render('add-doct
 
 // Register
 router.post('/register', (req, res) => {
-  const { name, email, password, password2 } = req.body;
+  const { name, email, password, password2, number, gender } = req.body;
   let errors = [];
 
-  if (!name || !email || !password || !password2) {
+  if (!name || !email || !password || !password2 || !number || !gender) {
     errors.push({ msg: 'Please enter all fields' });
   }
 
