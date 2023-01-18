@@ -23,7 +23,7 @@ router.get('/set-pricing',ensureAuthenticated, (req, res) => res.render('set-pri
 
 router.get('/doctor',ensureAuthenticated, (req, res) => res.render('doctor'));
 
-router.get('/add-doctor',ensureAuthenticated, (req, res) => res.render('add-doctor'));
+// router.get('/add-doctor',ensureAuthenticated, (req, res) => res.render('add-doctor'));
 
 // Register
 router.post('/register', (req, res) => {
